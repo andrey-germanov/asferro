@@ -1,0 +1,22 @@
+.App {
+  width: 1440px;
+  max-width: 100%;
+  color: black;
+  margin: 0 auto;
+  font-family: 'tenorsans';
+}
+*{
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'tenorsans';
+  font-style: normal;
+  font-weight: normal;
+  src: local('tenorsans'), url('../src/files/fonts/tenorsans.woff2') format('woff2');
+}

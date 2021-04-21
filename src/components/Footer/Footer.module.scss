@@ -1,0 +1,125 @@
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 111px;
+    background-color: #FAFAF9;
+    &SocMedia{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 96px;
+    }
+    &Contact{
+        display: flex;
+    }
+    &Address{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        &Street, &Phone{
+            display: flex;
+            align-items: center;
+        }
+        &Street{
+            margin-right: 56px;
+        }
+        img{
+            margin-right: 20px;
+        }
+    }
+    &Social{
+        display: flex;
+        align-items: center;
+        .img{
+            position: relative;
+        }
+        .img::before{
+            content: '';
+            color: #000;
+            height: 51px;
+            width: 51px;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-color: #000;
+        }
+    }
+    &ContactMedia{
+        display: none;
+    }
+}
+
+@media screen and(max-width: 1241px){
+    .footer{
+        align-items: center;
+        &Address{
+            width: 70%;
+        }
+    }
+  }
+
+
+@media screen and(max-width: 1090px){
+    .footer{
+        padding: 0 41px;
+        &Contact{
+            display: flex;
+        }
+        &Address{
+            width: 80%;
+            &Street{
+                margin-right: 56px;
+            }
+        }
+    }
+  }
+
+  @media screen and(max-width: 767px){
+    .footer{
+        display: block;
+        padding: 0;
+        &Address{
+            &Street{
+                margin-bottom: 0px;
+            }
+        }
+        &Contact{
+            display: none;
+        }
+        &SocMedia{
+            display: flex;
+            justify-content: space-between;
+            padding: 29px 22px 0 44px;
+        }
+        &ContactMedia{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 46px 22px 25px 23px;
+            font-size: 14px;
+        }
+    }
+  }
+
+  @media screen and(max-width: 424px){
+    .footer{
+        
+        &ContactMedia{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 46px 22px 25px 23px;
+            font-size: 14px;
+        }
+        
+        &Address{
+            &Street{
+                margin-right: 0px;
+            }
+        }
+    }
+  }

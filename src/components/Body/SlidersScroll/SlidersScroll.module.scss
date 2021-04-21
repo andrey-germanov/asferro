@@ -1,0 +1,13 @@
+.slidersScroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 105px;
+    color: #D3C1AC;
+    margin-right: 20px;
+}
+@media screen and(max-width: 1090px){
+    .slidersScroll{
+        display: none;
+    }
+  }
